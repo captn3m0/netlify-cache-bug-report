@@ -1,0 +1,8 @@
+# example netlify.toml
+[build]
+  command = "echo Build > index.html"
+
+[[edge_functions]]
+  cache = "manual"
+  path = "/test"
+  function = "fetch-test"
